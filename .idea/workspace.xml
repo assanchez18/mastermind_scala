@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f37decf0-4571-40bd-94e2-aeb857fb28ae" name="Default Changelist" comment="" />
+    <list default="true" id="c2486d25-8126-491a-aef1-3fcf5909aa18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/models/SecretCombination.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_13_1_2_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_13_1_2_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_13_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_13_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_13_3_0_8_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_13_3_0_8_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_13_3_0_8_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_13_3_0_8_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/practica_mastermind-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/practica_mastermind-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/practica_mastermind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/practica_mastermind.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/models/Board.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/Board.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/models/Game.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/Game.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/models/Round.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/Combination.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/views/BoardView.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/views/BoardView.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/views/GameView.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/views/GameView.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/views/RoundView.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/views/RoundView.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/RoundTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/CombinationTest.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,23 +32,22 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="practica_mastermind" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="ScalaTestRunConfiguration" name="RoundTest" />
-    </enabled-run-configurations>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1XTQve7nxoKLgFzVIXUel8DnLpe" />
+  <component name="ProjectId" id="1XnmWK7ZryJ3GYprEs73DzDd3Iw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -34,11 +55,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="row: List[Int]" />
-    </option>
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -48,7 +66,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardTest.put on 1,1 with R" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="CombinationTest.Create secret Combination with possible colors" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="practica_mastermind" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Class" />
@@ -60,16 +78,16 @@
       <option name="searchTest" value="Across module dependencies" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="BoardTest" />
-      <option name="testName" value="put on 1,1 with R" />
+      <option name="testClassPath" value="CombinationTest" />
+      <option name="testName" value="Create secret Combination with possible colors" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="C:\Users\enassre\source\practica_mastermind" />
+      <option name="workingDirectory" value="C:\Users\Sergio\source\repos\mastermind_scala" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardTest.put on 1,1 with x" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="CombinationTest.Create secret Combination" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="practica_mastermind" />
       <option name="allowRunningInParallel" value="false" />
       <option name="testKind" value="Class" />
@@ -81,52 +99,11 @@
       <option name="searchTest" value="Across module dependencies" />
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
-      <option name="testClassPath" value="BoardTest" />
-      <option name="testName" value="put on 1,1 with x" />
+      <option name="testClassPath" value="CombinationTest" />
+      <option name="testName" value="Create secret Combination" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="C:\Users\enassre\source\practica_mastermind" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoundTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="practica_mastermind" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
-      <option name="envs">
-        <map />
-      </option>
-      <option name="javaOptions" value="" />
-      <option name="jrePath" />
-      <option name="searchTest" value="Across module dependencies" />
-      <option name="showProgressMessages" value="true" />
-      <option name="testArgs" value="" />
-      <option name="testClassPath" value="RoundTest" />
-      <option name="useSbt" value="false" />
-      <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="C:\Users\enassre\source\practica_mastermind" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoundTest.read one Round" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="practica_mastermind" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
-      <option name="envs">
-        <map />
-      </option>
-      <option name="javaOptions" value="" />
-      <option name="jrePath" />
-      <option name="searchTest" value="Across module dependencies" />
-      <option name="showProgressMessages" value="true" />
-      <option name="testArgs" value="" />
-      <option name="testClassPath" value="RoundTest" />
-      <option name="testName" value="read one Round" />
-      <option name="useSbt" value="false" />
-      <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="C:\Users\enassre\source\practica_mastermind" />
+      <option name="workingDirectory" value="C:\Users\Sergio\source\repos\mastermind_scala" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,10 +111,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="ScalaTest.RoundTest.read one Round" />
-        <item itemvalue="ScalaTest.RoundTest" />
-        <item itemvalue="ScalaTest.BoardTest.put on 1,1 with R" />
-        <item itemvalue="ScalaTest.BoardTest.put on 1,1 with x" />
+        <item itemvalue="ScalaTest.CombinationTest.Create secret Combination with possible colors" />
+        <item itemvalue="ScalaTest.CombinationTest.Create secret Combination" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +129,7 @@
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="practica_mastermind [file:/C:/Users/enassre/source/practica_mastermind/]" />
+                <option name="name" value="mastermind_scala [file:/C:/Users/Sergio/source/repos/mastermind_scala/]" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -168,8 +143,9 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3163380460627" />
         <entry key="$PROJECT_DIR$/build.sbt" value="2445786858" />
-        <entry key="$PROJECT_DIR$/project/build.properties" value="1244562550" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
     </option>
   </component>
@@ -178,87 +154,97 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f37decf0-4571-40bd-94e2-aeb857fb28ae" name="Default Changelist" comment="" />
-      <created>1581067836247</created>
+      <changelist id="c2486d25-8126-491a-aef1-3fcf5909aa18" name="Default Changelist" comment="" />
+      <created>1581690264115</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1581067836247</updated>
+      <updated>1581690264115</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2472" y="182" key="#Intentions" timestamp="1581068198964">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="178" key="#Intentions" timestamp="1581765054236">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="182" key="#Intentions/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581068198964" />
-    <state x="2472" y="182" width="848" height="675" key="#Notifications" timestamp="1581068148132">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="178" key="#Intentions/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581765054236" />
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581764566507">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="182" width="848" height="675" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581068148132" />
-    <state x="2610" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581084045952">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581764566507" />
+    <state x="697" y="80" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581699969731">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="279" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581084045952" />
-    <state x="2012" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581069701657">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="697" y="80" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581699969731" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581767270178">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2012" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581069701657" />
-    <state x="2660" y="265" key="FileChooserDialogImpl" timestamp="1581067926568">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581767270178">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2660" y="265" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581067926568" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1581091173110">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581767270178">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091173110" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1581091173110">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581767270178">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091173110" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1581091173110">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581706879556">
+      <screen x="1920" y="48" width="1280" height="984" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091173110" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1581091173110">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581699970190" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879556" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1581706879555">
+      <screen x="1920" y="48" width="1280" height="984" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091173110" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1581091172403">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581699970190" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1581706879555">
+      <screen x="1920" y="48" width="1280" height="984" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091172403" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1581091172403">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581699970190" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1581706879556">
+      <screen x="1920" y="48" width="1280" height="984" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091172403" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1581091172403">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581699970190" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879556" />
+    <state x="2357" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1581760170388">
+      <screen x="1920" y="48" width="1280" height="984" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091172403" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1581091172403">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2357" y="373" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@1920.48.1280.984" timestamp="1581760170388" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581690274908" />
+    <state x="592" y="65" width="736" height="909" key="find.popup" timestamp="1581762741434">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581091172403" />
-    <state x="2460" y="259" key="IDE.errors.dialog" timestamp="1581089084531">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="592" y="65" width="736" height="909" key="find.popup/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581762741434" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1581762740661">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2460" y="259" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581089084531" />
-    <state x="2536" y="240" width="672" height="677" key="run.anything.popup" timestamp="1581088902738">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581762740661" />
+    <state x="616" y="240" key="run.anything.popup/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581702077964" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581766091875">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="2536" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581088902738" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581072790056">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581072790056" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766091875" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/views/RoundView.scala</url>
-          <line>19</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/main/scala/Main.scala</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,6 +3,6 @@ import models.Game
 
 object GameView {
   def write(game:Game) = {
-    BoardView.write(game)
+    BoardView.write(game.getBoard)
   }
 }

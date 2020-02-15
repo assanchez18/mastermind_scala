@@ -1,12 +1,16 @@
 package views
 
-import models.Game
+import models.{Board, Combination}
 
 object BoardView {
-  def write(game: Game) = {
-    var result = ""
-    for(i <- List(0,1,2,3,4,5,6,7,8,9)) {
-      RoundView.write(game.getColor(i))
+  def write(board: Board) = {
+    def print(result:String, rows:List[Combination]):String = {
+      rows match {
+        case Nil => result
+        case head :: _ if (head == rows.head) => print(result + (RoundView.writeComb(head.row)), rows.tail )
+      }
     }
+    print("",board.getRows)
   }
+
 }

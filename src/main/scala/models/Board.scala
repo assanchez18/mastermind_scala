@@ -1,33 +1,33 @@
 package models
 
-class Board(rows: List[Round] = List(
-  new Round,
-  new Round,
-  new Round,
-  new Round,
-  new Round,
-  new Round,
-  new Round,
-  new Round,
-  new Round,
-  new Round
+class Board(rows: List[Combination] = List(
+  new Combination,
+  new Combination,
+  new Combination,
+  new Combination,
+  new Combination,
+  new Combination,
+  new Combination,
+  new Combination,
+  new Combination,
+  new Combination
 )) {
 
   private val rows_ = rows
 
-  def getColor(roundNumber:Int): Round = rows_(roundNumber)
-
-  def isMastermind():Boolean = {
-    //TODO
+  def getColor(roundNumber:Int): Combination = rows_(roundNumber)
+  def getRows = this.rows_
+  def isMastermind(turn: Int):Boolean = {
+    //TODO-logic
+    
     false
   }
 
   def isComplete():Boolean = {
-    //TODO
-    false
+    !rows_.last.isEmpty()
   }
 
-  def put(round: Round, turn:Int): Board =
+  def put(round: Combination, turn:Int): Board =
     new Board(
       rows_.zipWithIndex.map {
         case (row,position) =>
