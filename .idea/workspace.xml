@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2486d25-8126-491a-aef1-3fcf5909aa18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/models/SecretCombination.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_13_1_2_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_13_1_2_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_library_2_13_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_13_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_13_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_13_3_0_8_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalactic_scalactic_2_13_3_0_8_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_13_3_0_8_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_scalatest_scalatest_2_13_3_0_8_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/practica_mastermind-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/practica_mastermind-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/practica_mastermind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/practica_mastermind.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/models/Board.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/Board.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/models/Game.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/Game.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/models/Round.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/Combination.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/views/BoardView.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/views/BoardView.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/views/GameView.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/views/GameView.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/views/RoundView.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/views/RoundView.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/RoundTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/CombinationTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/models/Combination.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/models/Combination.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/CombinationTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/CombinationTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +41,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="ScalaTest.CombinationTest.Count injured and dead">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="practica_mastermind" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CombinationTest.Count injured and dead" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="practica_mastermind" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="CombinationTest" />
+      <option name="testName" value="Count injured and dead" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Users\Sergio\source\repos\mastermind_scala" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,7 +83,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="CombinationTest" />
-      <option name="testName" value="Create secret Combination with possible colors" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="C:\Users\Sergio\source\repos\mastermind_scala" />
@@ -100,7 +103,6 @@
       <option name="showProgressMessages" value="true" />
       <option name="testArgs" value="" />
       <option name="testClassPath" value="CombinationTest" />
-      <option name="testName" value="Create secret Combination" />
       <option name="useSbt" value="false" />
       <option name="useUiWithSbt" value="false" />
       <option name="workingDirectory" value="C:\Users\Sergio\source\repos\mastermind_scala" />
@@ -110,6 +112,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.CombinationTest.Count injured and dead" />
+        <item itemvalue="ScalaTest.CombinationTest.Count injured and dead" />
         <item itemvalue="Application.Main" />
         <item itemvalue="ScalaTest.CombinationTest.Create secret Combination with possible colors" />
         <item itemvalue="ScalaTest.CombinationTest.Create secret Combination" />
@@ -175,29 +179,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="697" y="80" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581699969731" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581767270178">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582495490506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582364382905" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582495490506" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581767270178">
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582495490506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582364382905" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582495490506" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581767270178">
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582495490506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582364382905" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582495490506" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581767270178">
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582495490506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581766191401" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581767270178" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582364382905" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582495490506" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879555" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1581706879556">
       <screen x="1920" y="48" width="1280" height="984" />
@@ -219,11 +223,12 @@
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581699970190" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@1920.48.1280.984" timestamp="1581706879556" />
-    <state x="2357" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1581760170388">
-      <screen x="1920" y="48" width="1280" height="984" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1582495130615">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582360895669" />
     <state x="2357" y="373" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.48.1280.984/-1920.0.1920.1040@1920.48.1280.984" timestamp="1581760170388" />
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1581690274908" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/1920.48.1280.984/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582495130615" />
     <state x="592" y="65" width="736" height="909" key="find.popup" timestamp="1581762741434">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

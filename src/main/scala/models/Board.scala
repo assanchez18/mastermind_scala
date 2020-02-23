@@ -37,6 +37,7 @@ class Board(rows: List[Combination] = List(
             round
       })
 
+
   /*
   private def getCoordinates(player: Int): List[Coordinate] = {
 
