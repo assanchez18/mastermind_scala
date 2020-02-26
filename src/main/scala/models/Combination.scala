@@ -15,22 +15,31 @@ class Combination(roundValue: List[Int] = List(-1, -1, -1, -1), value: Int = 0 )
   def getRoundNumber():String = value_.toString
 
   def checkResult(secret: List[Int]):((Char,Int),(Char,Int)) = {
-    def countDead(row:List[Int],secret:List[Int], dead:Int):(Char,Int) = {
-      secret match {
-        case Nil => ('B',dead)
-        case head :: tail if (head == row.head) => countDead(row.tail, tail, dead+1)
-        case _ :: tail => countDead(row.tail, tail, dead)
-      }
-    }
-    def countInjured(row:List[Int],secret:List[Int], injure:Int):(Char,Int) = {
-      secret match {
-        case Nil => ('W',injure)
-        //case head :: tail
-        case _ =>('W',injure)
-      }
+    def checkResultAux(row:List[Int],secret:List[Int]):((Char,Int),(Char,Int)) = {
 
-    }
+      def checkResultAux2(row:List[Int],secret:List[Int], dead:Int, remainingRow:List[Int], remainingSec:List[Int]):((Char,Int),(Char,Int)) = {
 
-    (countDead(this.row_,secret,0),countInjured(this.row_,secret,0))
+        def countInjured(row:List[Int],secret:List[Int], injure:Int):(Char,Int) = {
+          //todo injured logic
+          secret match {
+            case Nil => ('W',injure)
+            case head :: tail => if(tail.)
+
+            //case head :: tail
+            case _ =>('W',injure)
+          }
+        }
+
+        row match {
+          case Nil => (('B',dead), countInjured(remainingRow, remainingSec,0))
+            //acumulates dead but lists keep as them were, pseudo popping item
+          case head :: tail if (head == secret.head) => checkResultAux2(tail, secret.tail, dead+1, remainingRow, remainingSec)
+            //not match, then we add those two values to the remaining list, we will find whites later
+          case _ :: tail => checkResultAux2(secret.tail, tail, dead, remainingRow :: row.head, remainingSec :: secret.head)
+        }
+      }
+      checkResultAux2(this.row_,secret,0,Nil,Nil)
+    }
+    checkResultAux(this.row_,secret)
   }
 }
