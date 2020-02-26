@@ -1,35 +1,36 @@
 package views
 
-import models.{Combination, SecretCombination}
-
 object RoundView {
 
-  def writeComb(round: Combination) = {
-    def writeResult(round: Combination): String = " Dead: " + round.checkResult(SecretCombination.getSecretCombination())._1._2 + " Injured: " + round.checkResult(SecretCombination.getSecretCombination())._2._2
+  def writeComb(round: List[Int]) = {
+
     def readComb(result: String, comb: List[Int]):String =
       comb match {
         case Nil => result
         case head :: tail => readComb(result.appended(ColorView.getChar(head)),tail)
       }
 
-    print(readComb ("",round.row) + writeResult(round) + "\n")
+    print(readComb ("",round) + " ")
   }
 
 
 
-  def read(roundNumber:Int): Combination = {
+  def read(roundNumber:Int): List[Int] = {
     var round = ""
     do {
       round = GestorIO.readString("Combination? (R - G - A - O)")
     }while(round.length != 4 || !validInput(round))
-    new Combination(strToRound(round.toList,Nil), roundNumber)
+    strToRound(round.toList)
   }
 
-  def strToRound(str: List[Char], round:List[Int]): List[Int] = {
-    str match {
-      case Nil => round
-      case _ => strToRound(str.tail, round.appended(ColorView.getNum(str.head)))
+  def strToRound(str: List[Char]): List[Int] = {
+    def strToRoundAux(str: List[Char], round: List[Int]): List[Int] = {
+      str match {
+        case Nil => round
+        case _ => strToRoundAux(str.tail,round.appended(ColorView.getNum(str.head)))
+      }
     }
+    strToRoundAux(str, Nil)
   }
 
   def validInput(str: String) = {

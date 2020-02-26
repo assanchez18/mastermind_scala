@@ -6,9 +6,9 @@ class Game(turn: Int = 0, board: Board = new Board()) {
 
   private val board_ = board
 
-  def getColor(roundNumber:Int): Combination = board_.getColor(roundNumber)
+  def getColor(roundNumber:Int): Int = board_.getColor(roundNumber)
 
-  def put(row: Combination): Game = {
+  def put(row: List[Int]): Game = {
     val newBoard = this.board_.put(row, this.turn_)
     val newTurn = this.turn_ + 1
     new Game(newTurn, newBoard)

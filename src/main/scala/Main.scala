@@ -13,7 +13,7 @@ object Main {
       GameView.write(game)
       times += 1
     } while (!game.isMastermind && !game.isComplete)
-    if (game.isComplete) GestorIO.write("... pero has perdido") else GestorIO.write("... Victoria!")
+    if (!game.isMastermind) GestorIO.write("... pero has perdido") else GestorIO.write("... Victoria!")
   }
 
 }
