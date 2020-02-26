@@ -9,11 +9,8 @@ object RoundView {
         case Nil => result
         case head :: tail => readComb(result.appended(ColorView.getChar(head)),tail)
       }
-
     print(readComb ("",round) + " ")
   }
-
-
 
   def read(roundNumber:Int): List[Int] = {
     var round = ""

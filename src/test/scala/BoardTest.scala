@@ -3,7 +3,7 @@ import org.scalatest.FunSuite
 
 
 class BoardTest extends FunSuite {
-  test("Check if is Mastermind") {
+  test("Given a row and the secret combination check if is Mastermind") {
     var board = new Board
     val sec = List(0, 1, 2, 3)
     board = board.put(List(0,1,2,3),0)
@@ -11,7 +11,7 @@ class BoardTest extends FunSuite {
       "Error calculating Result only " + board.checkResult(board.getRows(0), sec)._1._2 + " dead.")
   }
 
-  test("Count injured and dead ") {
+  test("Given different rows then count injured and dead ") {
     def matchTuple(result: ((Char, Int), (Char, Int)), expected: ((Char, Int), (Char, Int))): Boolean = {
       (result._1._2 == expected._1._2) && (result._2._2 == expected._2._2)
     }
@@ -42,6 +42,19 @@ class BoardTest extends FunSuite {
         + board.checkResult(comb3,sec3)._1._2 + " Deaths and " + board.checkResult(comb3,sec3)._2._2 + " Injured.")
   }
 
+  test("Given an empty board when put a new row then row is added") {
+    var board = new Board
+    assert(board.getRows.head.head == -1, "Board has not been created empty!")
+    board = board.put(List(0,0,0,0),0)
+    assert(board.getRows.head.head == 0, "Board has not put the new row properly!")
+  }
 
+  test("Given an empty board when put 10 rows then board complete") {
+    var board = new Board
+    assert(board.getRows.head.head == -1, "Board has not been created empty!")
+    for (i <- 0 to 9)
+      board = board.put(List(0,0,0,0),i)
+    assert(board.isComplete, "Board is not complete, some rows can be missing!")
+  }
 }
 
