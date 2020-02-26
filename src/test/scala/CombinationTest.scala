@@ -6,7 +6,7 @@ class CombinationTest extends FunSuite {
 
   test("Create secret Combination with possible colors") {
     assert(RoundView.inRange(SecretCombination.getSecretCombination,true),
-      "The secret Combination is not correctly generated: " + RoundView.writeComb(SecretCombination.getSecretCombination))
+      "The secret Combination is not correctly generated")
   }
 
   test("Count injured and dead ") {

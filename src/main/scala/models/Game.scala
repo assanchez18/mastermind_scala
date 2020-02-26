@@ -14,14 +14,10 @@ class Game(turn: Int = 0, board: Board = new Board()) {
     new Game(newTurn, newBoard)
   }
 
-  def isMastermind: Boolean = board_.isMastermind(this.turn_)
+  def isMastermind: Boolean = board_.isMastermind(this.turn_ -1)
 
   def isComplete: Boolean = board_.isComplete
 
   def getBoard: Board = this.board_
-  /*
-  def getColor(coordinate:Coordinate):Int = board_.getColor(coordinate)
 
-  def take : Int = turn_.take
-*/
 }

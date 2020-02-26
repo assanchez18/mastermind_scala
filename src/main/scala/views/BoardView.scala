@@ -7,7 +7,7 @@ object BoardView {
     def print(result:String, rows:List[Combination]):String = {
       rows match {
         case Nil => result
-        case head :: _ if (head == rows.head) => print(result + (RoundView.writeComb(head.row)), rows.tail )
+        case head :: _  => print(result + (RoundView.writeComb(head.row)), rows.tail )
       }
     }
     print("",board.getRows)

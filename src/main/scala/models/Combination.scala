@@ -3,7 +3,7 @@ package models
 class Combination(roundValue: List[Int] = List(-1, -1, -1, -1), value: Int = 0 ) {
 
   private val value_ = value
-  protected val row_ = roundValue
+  private val row_ = roundValue
 
   def roundNumber: Int = value_
   def row: List[Int] = row_
@@ -36,4 +36,6 @@ class Combination(roundValue: List[Int] = List(-1, -1, -1, -1), value: Int = 0 )
     }
     checkResultAux(this.row_,secret)
   }
+
+  def isMastermind(): Boolean = checkResult(SecretCombination.getSecretCombination())._1 == row.length
 }
