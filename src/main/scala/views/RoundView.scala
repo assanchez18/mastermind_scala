@@ -1,18 +1,21 @@
 package views
 
-import models.Combination
+import models.{Combination, SecretCombination}
 
 object RoundView {
 
-  def writeComb(round: List[Int]) = {
-    def readComb(result: String, comb: List[Int]):String = {
+  def writeComb(round: Combination) = {
+    def writeResult(round: Combination): String = " Dead: " + round.checkResult(SecretCombination.getSecretCombination())._1._2 + " Injured: " + round.checkResult(SecretCombination.getSecretCombination())._2._2
+    def readComb(result: String, comb: List[Int]):String =
       comb match {
         case Nil => result
         case head :: tail => readComb(result.appended(ColorView.getChar(head)),tail)
       }
-    }
-    print(readComb ("",round) + "\n")
+
+    print(readComb ("",round.row) + writeResult(round) + "\n")
   }
+
+
 
   def read(roundNumber:Int): Combination = {
     var round = ""

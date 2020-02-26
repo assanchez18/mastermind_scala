@@ -39,4 +39,11 @@ class CombinationTest extends FunSuite {
       "Checking result error, expected " + expectedResult3._1._2 + " Deaths and " + expectedResult3._2._2 + " Injured and received "
         + comb3.checkResult(sec3.row)._1._2 + " Deaths and " + comb3.checkResult(sec3.row)._2._2 + " Injured.")
   }
+
+  test("Check if is Mastermind") {
+    val comb = new Combination(List(0, 1, 2, 3))
+    val sec = new Combination(List(0, 1, 2, 3))
+    assert(comb.isMastermind(sec.row),
+    "Error calculating Result only " + comb.checkResult(sec.row)._1._2 + " dead.")
+  }
 }
