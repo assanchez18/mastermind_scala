@@ -13,21 +13,21 @@ object RoundView {
   }
 
   def read(roundNumber:Int): List[Int] = {
+    def strToRound(str: List[Char]): List[Int] = {
+      def strToRound2(str: List[Char], round: List[Int]): List[Int] = {
+        str match {
+          case Nil => round
+          case _ => strToRound2(str.tail,round.appended(ColorView.getNum(str.head)))
+        }
+      }
+      strToRound2(str, Nil)
+    }
+  //Duda sobre como poder hacer esto sin doWHile Quizás podemos usar el readComb de arriba?
     var round = ""
     do {
       round = GestorIO.readString("Combination? (R - G - A - O)")
     }while(round.length != 4 || !validInput(round))
     strToRound(round.toList)
-  }
-
-  def strToRound(str: List[Char]): List[Int] = {
-    def strToRoundAux(str: List[Char], round: List[Int]): List[Int] = {
-      str match {
-        case Nil => round
-        case _ => strToRoundAux(str.tail,round.appended(ColorView.getNum(str.head)))
-      }
-    }
-    strToRoundAux(str, Nil)
   }
 
   def validInput(str: String) = {
