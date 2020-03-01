@@ -1,40 +1,39 @@
 package models
 
-class Board(rows: List[List[Int]] = List(
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1),
-  List(-1,-1,-1,-1)
+import models.Color.Color
+
+class Board(rows: List[List[Color]] = List(
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty),
+  List(Color.empty,Color.empty,Color.empty,Color.empty)
 )) {
 
   private val rows_ = rows
+  def isComplete():Boolean = !(rows_.last(0) == Color.empty)
 
+  def getRows: List[List[Color]] = this.rows_
 
-  def getColor(roundNumber:Int): Int = rows_(roundNumber)(roundNumber)
-  def isComplete():Boolean = !(rows_.last(0) == -1)
+  def checkResult(row:List[Color], secret: List[Color]):((Color,Int),(Color,Int)) = {
+    def checkResultAux(row:List[Color],secret:List[Color]):((Color,Int),(Color,Int)) = {
 
-  def getRows = this.rows_
+      def checkResultAux2(row:List[Color],secret:List[Color], dead:Int, remainingRow:List[Color], remainingSec:List[Color]):((Color,Int),(Color,Int)) = {
 
-  def checkResult(row:List[Int], secret: List[Int]):((Char,Int),(Char,Int)) = {
-    def checkResultAux(row:List[Int],secret:List[Int]):((Char,Int),(Char,Int)) = {
-
-      def checkResultAux2(row:List[Int],secret:List[Int], dead:Int, remainingRow:List[Int], remainingSec:List[Int]):((Char,Int),(Char,Int)) = {
-
-        def countInjured(row:List[Int],secret:List[Int], injure:Int):(Char,Int) =
+        def countInjured(row:List[Color],secret:List[Color], injure:Int):(Color,Int) =
           row match {
-            case Nil => ('W',injure)
-            case head :: tail if(secret.contains(head)) => countInjured(tail,secret.patch(secret.indexOf(head),Seq(-1),1), injure+1)
+            case Nil => (Color.white,injure)
+            case head :: tail if(secret.contains(head)) => countInjured(tail,secret.patch(secret.indexOf(head),Seq(Color.empty),1), injure+1)
             case _ :: tail => countInjured(tail, secret, injure)
           }
 
         row match {
-          case Nil => (('B',dead), countInjured(remainingRow, remainingSec,0))
+          case Nil => ((Color.black,dead), countInjured(remainingRow, remainingSec,0))
           case head :: tail if (head == secret.head) => checkResultAux2(tail, secret.tail, dead+1, remainingRow, remainingSec)
           case _ :: tail => checkResultAux2(tail, secret.tail, dead, remainingRow.appended(row.head), remainingSec.appended(secret.head))
         }
@@ -47,12 +46,12 @@ class Board(rows: List[List[Int]] = List(
   def isMastermind(turn: Int):Boolean = {
     checkResult(rows_(turn), SecretCombination.getSecretCombination())._1._2 == 4
   }
-  def isMastermind(turn: Int, secret: List[Int]):Boolean = {
+  def isMastermind(turn: Int, secret: List[Color]):Boolean = {
     checkResult(rows_(turn), secret)._1._2 == 4
   }
 
 
-  def put(round: List[Int], turn:Int): Board =
+  def put(round: List[Color], turn:Int): Board =
     new Board(
       rows_.zipWithIndex.map {
         case (row,position) =>

@@ -1,15 +1,14 @@
 package models
+import Color.Color
 
 object SecretCombination  {
 
   private val secretCombination_ = randomCombination(Nil)
-  private def randomCombination(list:List[Int]): List[Int] = {
-    val r = scala.util.Random
+  private def randomCombination(list:List[Color]): List[Color] =
     list.size match {
       case 4 => list
-      case _ => randomCombination(list.appended(r.nextInt(4)))
-    }
+      case _ => randomCombination(list.appended(Color.random))
   }
   
-  def getSecretCombination():List[Int] = this.secretCombination_
+  def getSecretCombination():List[Color] = this.secretCombination_
 }

@@ -1,24 +1,24 @@
 package views
 
+import models.Color
+import models.Color.Color
+
 object RoundView {
 
-  def writeComb(round: List[Int]) = {
-    def combinationToStr(result: String, comb: List[Int]):String =
+  def writeComb(round: List[Color]) = {
+    def combinationToStr(result: String, comb: List[Color]):String =
       comb match {
         case Nil => result + " "
-        case head :: tail => combinationToStr(result.appended(ColorView.getChar(head)),tail)
+        case head :: tail => combinationToStr(result.concat(head.toString),tail)
       }
     print(combinationToStr ("",round))
   }
 
-
-
-
-  def read(roundNumber:Int): List[Int] = {
-    def strToRound(str: List[Char], round: List[Int]): List[Int] =
+  def read(roundNumber:Int): List[Color] = {
+    def strToRound(str: List[Char], round: List[Color]): List[Color] =
       str match {
         case Nil => round
-        case _ => strToRound(str.tail,round.appended(ColorView.getNum(str.head)))
+        case _ => strToRound(str.tail,round.appended(Color.charToColor(str.head)))
       }
 
     def read2(combination: String): List[Char] = {
@@ -30,19 +30,19 @@ object RoundView {
   }
 
   def validInput(str: String) = {
-    def validInput2(str:List[Char], list: List[Int]):List[Int] =
+    def validInput2(str:List[Char], list: List[Color]):List[Color] =
       str match {
         case Nil => list
-        case _ => validInput2(str.tail, list.appended(ColorView.getNum(str.head)))
+        case _ => validInput2(str.tail, list.appended(Color.charToColor(str.head)))
       }
-
-    inRange(validInput2(str.toList, Nil),true)
+    inRange(validInput2(str.toList, Nil))
   }
 
-  def inRange(secret:List[Int], correct:Boolean):Boolean =
-    (secret, correct) match {
-      case (Nil, _) => correct
-      case (head :: tail, true) => inRange(tail, (head >= 0 && head <=3))
-      case (_, false) => correct
+  def inRange(list:List[Color]):Boolean = {
+    list match {
+      case Nil => true
+      case head :: tail if (head == list.head && head > Color.empty && head < Color.black) => inRange(tail)
+      case _ => false
     }
+  }
 }

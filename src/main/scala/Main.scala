@@ -1,4 +1,4 @@
-import models.Game
+import models.{Game, SecretCombination}
 import views.{GameView, GestorIO, RoundView}
 object Main {
 
@@ -7,6 +7,7 @@ object Main {
   def main(args: Array[String]):Unit = {
 
     GameView.write(game)
+    println("Secret: " + SecretCombination.getSecretCombination())
     var times = 0
     do {
       game = game.put(RoundView.read(times))

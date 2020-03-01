@@ -1,10 +1,11 @@
 package views
 
+import models.Color.Color
 import models.{Board, SecretCombination}
 
 object BoardView {
   def write(board: Board) = {
-    def toPrint(result:String, rows: List[List[Int]]):String = {
+    def toPrint(result:String, rows: List[List[Color]]):String = {
       rows match {
         case Nil => result
         case head :: _ if (head == rows.head) => toPrint(result +
@@ -15,6 +16,6 @@ object BoardView {
     }
     toPrint("",board.getRows)
   }
-  def writeResult(result: ((Char,Int),(Char,Int))) =
-    print(" Dead: " + result._1._2 + " Injured: " + result._2._2 + "\n")
+  def writeResult(result: ((Color,Int),(Color,Int))) =
+    print( result._1._1 + ": " + result._1._2 + " "+ result._2._1 + ": "+ result._2._2 + "\n")
 }
