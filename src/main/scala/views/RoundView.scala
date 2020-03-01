@@ -11,18 +11,22 @@ object RoundView {
     print(combinationToStr ("",round))
   }
 
+
+
+
   def read(roundNumber:Int): List[Int] = {
     def strToRound(str: List[Char], round: List[Int]): List[Int] =
       str match {
         case Nil => round
         case _ => strToRound(str.tail,round.appended(ColorView.getNum(str.head)))
       }
-    var round = ""
-    do {
-      round = GestorIO.readString("Combination? (R - G - A - O)")
-    }while(round.length != 4 || !validInput(round))
 
-    strToRound(round.toList, Nil)
+    def read2(combination: String): List[Char] = {
+      if (combination.length == 4 && validInput(combination)) return combination.toList
+      else read2(GestorIO.readString("Combination? (R - G - A - O)"))
+    }
+
+    strToRound(read2(GestorIO.readString("Combination? (R - G - A - O)")), Nil)
   }
 
   def validInput(str: String) = {
