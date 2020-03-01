@@ -14,7 +14,7 @@ class Game(turn: Int = 0, board: Board = new Board()) {
     new Game(newTurn, newBoard)
   }
 
-  def isMastermind: Boolean = board_.isMastermind(this.turn_ -1)
+  def isMastermind: Boolean = board_.isMastermind(this.turn_ -1, SecretCombination.getSecretCombination())
 
   def isComplete: Boolean = board_.isComplete
 

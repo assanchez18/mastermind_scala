@@ -16,6 +16,7 @@ class Board(rows: List[List[Color]] = List(
 )) {
 
   private val rows_ = rows
+
   def isComplete():Boolean = !(rows_.last(0) == Color.empty)
 
   def getRows: List[List[Color]] = this.rows_
@@ -33,7 +34,7 @@ class Board(rows: List[List[Color]] = List(
           }
 
         row match {
-          case Nil => ((Color.black,dead), countInjured(remainingRow, remainingSec,0))
+          case Nil => ((Color.black, dead), countInjured(remainingRow, remainingSec,0))
           case head :: tail if (head == secret.head) => checkResultAux2(tail, secret.tail, dead+1, remainingRow, remainingSec)
           case _ :: tail => checkResultAux2(tail, secret.tail, dead, remainingRow.appended(row.head), remainingSec.appended(secret.head))
         }
@@ -43,16 +44,9 @@ class Board(rows: List[List[Color]] = List(
     checkResultAux(row,secret)
   }
 
-  def isMastermind(turn: Int):Boolean = {
-    checkResult(rows_(turn), SecretCombination.getSecretCombination())._1._2 == 4
-  }
-  def isMastermind(turn: Int, secret: List[Color]):Boolean = {
-    checkResult(rows_(turn), secret)._1._2 == 4
-  }
+  def isMastermind(turn: Int, secret: List[Color]):Boolean = checkResult(rows_(turn), secret)._1._2 == secret.length
 
-
-  def put(round: List[Color], turn:Int): Board =
-    new Board(
+  def put(round: List[Color], turn:Int): Board =new Board(
       rows_.zipWithIndex.map {
         case (row,position) =>
           if (position != turn)
